@@ -46,7 +46,7 @@ func main() {
 	proxyURL = os.Getenv("PROXY_URL")
 
 	// purchase coins with 0.05 solana, priority fee of 200000 microlamp
-	bot, err := NewBot(rpcURL, wsURL, privateKey, db, 0.05, 200000)
+	bot, err := NewBot(rpcURL, wsURL, privateKey, db, 0.005, 20000)
 	if err != nil {
 		log.Fatal(err)
 	}
