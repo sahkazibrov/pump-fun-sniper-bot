@@ -57,9 +57,9 @@ func main() {
 	go bot.HandleBuyCoins()
 	go bot.HandleSellCoins()
 
-	if err := bot.beginJito(); err != nil {
-		log.Fatal("Error Starting Jito", err)
-	}
+	// if err := bot.beginJito(); err != nil {
+	//	log.Fatal("Error Starting Jito", err)
+	// }
 
 	select {}
 }
